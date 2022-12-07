@@ -14,12 +14,14 @@ public class Main {
         System.out.println("pushok.getName() = " + pushok.getName());
         System.out.println();
         Human maksim = new Human(1988, "Максим", "Минск", "бренд-менеджер");
-        Human anna = new Human(1993, "Аня", "Москва", "методист образовательных программ");
-        Human katya = new Human(1992, "Катя", "Калининград", "продакт-менеджер");
-        Human artyom = new Human(1995, "Артём", "Москва", "директор по развитию бизнеса");
         maksim.sayHello();
+        Human anna = new Human(1993, "Аня", "Москва", "методист образовательных программ");
         anna.sayHello();
+        Human katya = new Human(1992, "Катя", "Калининград", "продакт-менеджер");
         katya.sayHello();
+        Human artyom = new Human(1995, "Артём", "Москва", "директор по развитию бизнеса");
         artyom.sayHello();
+        Human vladimir = new Human(2001, "Владимир", "Казань", "");
+        vladimir.sayHello();
     }
 }
