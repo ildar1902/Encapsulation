@@ -7,11 +7,7 @@ public class Human {
     String jobTitle;
 
     public Human(int yearOfBirth, String name, String town, String jobTitle) {
-        if (yearOfBirth >= 0) {
-            this.yearOfBirth = yearOfBirth;
-        } else {
-            this.yearOfBirth = Math.abs(yearOfBirth);
-        }
+        setYearOfBirth(yearOfBirth);
         if (name == null || name.isEmpty()) {
             this.name = "'Информация не указана'";
         } else {

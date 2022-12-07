@@ -1,3 +1,5 @@
+import Transport.Car;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -59,5 +61,74 @@ public class Main {
         bouquet.addFlowers(gypsophila);
         bouquet.addFlowers(gypsophila);
         System.out.println(bouquet);
+
+//        дз2
+        Car ladaGranta = new Car(
+                "Lada",
+                "Granta",
+                1.7,
+                "yellow",
+                2015,
+                "Russia",
+                "механика",
+                "седан",
+                "а001аа102",
+                5,
+                true);
+        Car audiA8 = new Car(
+                "Audi",
+                "A8 50 L TDI quattro",
+                3.0,
+                "black",
+                2020,
+                "Germany",
+                "автомат",
+                "седан",
+                "а002аа102",
+                4,
+                true);
+        Car bmw = new Car(
+                "BMW",
+                "Z8",
+                3.0,
+                "black",
+                2021,
+                "Germany",
+                "механика",
+                "хэтчбек",
+                "а003аа102",
+                4,
+                true);
+        Car kiaSportage = new Car(
+                "Kia",
+                "Sportage 4-го поколения",
+                2.4,
+                "red",
+                2018,
+                "south Korea",
+                "автомат",
+                "кроссовер",
+                "а004аа102",
+                6,
+                true);
+        Car hyundai = new Car(
+                "Hyundai",
+                "Avante",
+                1.6,
+                "orange",
+                2016,
+                "south Korea",
+                "механика",
+                "седан",
+                "а005аа102",
+                5,
+                true);
+        System.out.println();
+        System.out.println(ladaGranta);
+        System.out.println(audiA8);
+        System.out.println(bmw);
+        System.out.println(kiaSportage);
+        System.out.println(hyundai);
+        System.out.println();
     }
 }
