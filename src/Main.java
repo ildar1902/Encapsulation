@@ -46,23 +46,19 @@ public class Main {
 //        Доп задание
         System.out.println("    Доп задание");
         Bouquet bouquet = new Bouquet();
+        bouquet.addFlowers(rose);        bouquet.addFlowers(rose);
+        bouquet.addFlowers(rose);        bouquet.addFlowers(rose);
+        bouquet.addFlowers(rose);        bouquet.addFlowers(rose);
         bouquet.addFlowers(rose);
-        bouquet.addFlowers(rose);
-        bouquet.addFlowers(rose);
-        bouquet.addFlowers(rose);
-        bouquet.addFlowers(rose);
+        bouquet.addFlowers(chrysanthemum);        bouquet.addFlowers(chrysanthemum);
+        bouquet.addFlowers(chrysanthemum);        bouquet.addFlowers(chrysanthemum);
         bouquet.addFlowers(chrysanthemum);
-        bouquet.addFlowers(chrysanthemum);
-        bouquet.addFlowers(chrysanthemum);
-        bouquet.addFlowers(pion);
-        bouquet.addFlowers(pion);
-        bouquet.addFlowers(pion);
+        bouquet.addFlowers(gypsophila);        bouquet.addFlowers(gypsophila);
         bouquet.addFlowers(gypsophila);
-        bouquet.addFlowers(gypsophila);
-        bouquet.addFlowers(gypsophila);
-        System.out.println(bouquet);
-
+        bouquet.printBouquet();
 //        дз2
+        System.out.println();
+        System.out.println("DZ 2");
         Car ladaGranta = new Car(
                 "Lada",
                 "Granta",

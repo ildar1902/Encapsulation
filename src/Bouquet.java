@@ -1,4 +1,3 @@
-import java.text.DecimalFormat;
 import java.util.Arrays;
 
 public class Bouquet {
@@ -31,10 +30,22 @@ public class Bouquet {
         return minSpan;
     }
 
+    public void printBouquet() {
+        System.out.println(this);
+    }
+
     @Override
     public String toString() {
-        return " Стоимость букета = " + new DecimalFormat("0.00").format(calculateCost())
-                + " руб. Срок хранения букета = " + findMinLifeSpan() + " дн.";
+        double sum = calculateCost();
+        int lifeSpan = findMinLifeSpan();
+        int j = 1;
+        StringBuilder composition = new StringBuilder("Состав букета: ").append("\n");
+        for (Flower flower : flowers) {
+            composition.append(j++).append(". ").append(flower.getFlowerName()).append("\n");
+        }
+        composition.append("Срок хранения букета: ").append(lifeSpan).append(" д.").append("\n");
+        composition.append("Стоимость букета: ").append(String.format("%.2f", sum)).append(" руб");
+        return composition.toString();
     }
 }
 
