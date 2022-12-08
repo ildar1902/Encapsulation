@@ -56,8 +56,8 @@ public class Car {
 
         @Override
         public String toString() {
-            return "Срок действия: " + getValidityPeriod() +
-                    ", стоимость = " + getCost() + " руб" +
+            return "Срок действия страховки: " + getValidityPeriod() +
+                    ", стоимость страховки = " + getCost() + " руб" +
                     ", номер страховки: " + getSerialNumberInsurance();
         }
     }
