@@ -1,21 +1,67 @@
 package Transport;
 
+import java.time.LocalDate;
+
 public class Car {
-    public static class Key{
-       private final boolean remoteEngineStart;
-       private final boolean keylessAccess;
+    public static class Key {
+        private final boolean remoteEngineStart;
+        private final boolean keylessAccess;
 
         public Key(boolean remoteEngineStart, boolean keylessAccess) {
             this.remoteEngineStart = remoteEngineStart;
             this.keylessAccess = keylessAccess;
         }
+
         public boolean isRemoteEngineStart() {
             return remoteEngineStart;
         }
+
         public boolean isKeylessAccess() {
             return keylessAccess;
         }
     }
+
+    public class Insurance {
+        private final int validityPeriod;
+        private final double cost;
+        private final String serialNumberInsurance;
+
+        public Insurance(int validityPeriod, double cost, String serialNumberInsurance) {
+            this.validityPeriod = validityPeriod;
+            if (validityPeriod < LocalDate.now().getYear()) {
+                System.out.println("У автомобиля " + getBrand() + " " + getModel() + " "
+                        + " срок действия страховки истёк, нужно срочно оформить новую страховку!");
+            }
+            this.cost = cost;
+            if (cost <= 0) {
+                cost = 10_000;
+            }
+            this.serialNumberInsurance = serialNumberInsurance;
+            if (serialNumberInsurance == null || serialNumberInsurance.length() != 9) {
+                System.out.println("Номер страховки некоректный!");
+            }
+        }
+
+        public int getValidityPeriod() {
+            return validityPeriod;
+        }
+
+        public double getCost() {
+            return cost;
+        }
+
+        public String getSerialNumberInsurance() {
+            return serialNumberInsurance;
+        }
+
+        @Override
+        public String toString() {
+            return "Срок действия: " + getValidityPeriod() +
+                    ", стоимость = " + getCost() + " руб" +
+                    ", номер страховки: " + getSerialNumberInsurance();
+        }
+    }
+
     private final String brand;
     private final String model;
     private double engineVolume;
@@ -165,6 +211,7 @@ public class Car {
                 && Character.isDigit(serialNumber.charAt(7))
                 && Character.isDigit(serialNumber.charAt(8));
     }
+
     @Override
     public String toString() {
         return "Автомобиль: " + brand + " " + model +
@@ -175,7 +222,6 @@ public class Car {
                 ", КПП: " + transmission +
                 ", кузов: " + bodyType +
                 ", регистрационный номер: " + serialNumber +
-                ", количество мет: " + numberSeats
-                ;
+                ", количество мет: " + numberSeats;
     }
 }

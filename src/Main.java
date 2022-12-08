@@ -46,14 +46,20 @@ public class Main {
 //        Доп задание
         System.out.println("    Доп задание");
         Bouquet bouquet = new Bouquet();
-        bouquet.addFlowers(rose);        bouquet.addFlowers(rose);
-        bouquet.addFlowers(rose);        bouquet.addFlowers(rose);
-        bouquet.addFlowers(rose);        bouquet.addFlowers(rose);
         bouquet.addFlowers(rose);
-        bouquet.addFlowers(chrysanthemum);        bouquet.addFlowers(chrysanthemum);
-        bouquet.addFlowers(chrysanthemum);        bouquet.addFlowers(chrysanthemum);
+        bouquet.addFlowers(rose);
+        bouquet.addFlowers(rose);
+        bouquet.addFlowers(rose);
+        bouquet.addFlowers(rose);
+        bouquet.addFlowers(rose);
+        bouquet.addFlowers(rose);
         bouquet.addFlowers(chrysanthemum);
-        bouquet.addFlowers(gypsophila);        bouquet.addFlowers(gypsophila);
+        bouquet.addFlowers(chrysanthemum);
+        bouquet.addFlowers(chrysanthemum);
+        bouquet.addFlowers(chrysanthemum);
+        bouquet.addFlowers(chrysanthemum);
+        bouquet.addFlowers(gypsophila);
+        bouquet.addFlowers(gypsophila);
         bouquet.addFlowers(gypsophila);
         bouquet.printBouquet();
 //        дз2
@@ -121,5 +127,31 @@ public class Main {
         System.out.println(hyundai);
         Car.Key bmwKey = new Car.Key(true, false);
         System.out.println(bmwKey);
+        Car.Insurance grantaInsurance = ladaGranta.new Insurance(
+                2023,
+                9890,
+                "ААА000001");
+        System.out.println("Лада Гранта: " + grantaInsurance);
+        Car.Insurance audiInsurance = audiA8.new Insurance(
+                2022,
+                12890,
+                "ААА000002");
+        System.out.println("Ауди: " + audiInsurance);
+        Car.Insurance bmwInsurance = bmw.new Insurance(
+                2021,
+                11990,
+                "ААА000003");
+        System.out.println("БМВ: " + bmwInsurance);
+        Car.Insurance kiaInsurance = kiaSportage.new Insurance(
+                2024,
+                9000,
+                "ААА000004");
+        System.out.println("Киа: " + kiaInsurance);
+        Car.Insurance hyundaiInsurance = hyundai.new Insurance(
+                2022,
+                10890,
+                "ААА000005");
+        System.out.println("Хёндай: " + hyundaiInsurance);
+
     }
 }
