@@ -119,5 +119,7 @@ public class Main {
                 "а005аа102",
                 5);
         System.out.println(hyundai);
+        Car.Key bmwKey = new Car.Key(true, false);
+        System.out.println(bmwKey);
     }
 }
