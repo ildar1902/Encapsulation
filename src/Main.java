@@ -60,71 +60,64 @@ public class Main {
         System.out.println();
         System.out.println("DZ 2");
         Car ladaGranta = new Car(
-                "Lada",
-                "Granta",
+                "Лада",
+                "Гранта",
                 1.7,
-                "yellow",
+                "жёлтый",
                 2015,
-                "Russia",
-                "механика",
+                "Россия",
+                "МКПП",
                 "седан",
                 "а001аа102",
-                5,
-                true);
+                5);
+        System.out.println(ladaGranta);
         Car audiA8 = new Car(
                 "Audi",
                 "A8 50 L TDI quattro",
                 3.0,
-                "black",
+                "чёрный",
                 2020,
-                "Germany",
-                "автомат",
+                "Германия",
+                "АКПП",
                 "седан",
                 "а002аа102",
-                4,
-                true);
+                4);
+        System.out.println(audiA8);
         Car bmw = new Car(
                 "BMW",
                 "Z8",
                 3.0,
-                "black",
+                "чёрный",
                 2021,
-                "Germany",
-                "механика",
+                "Германия",
+                "МКПП",
                 "хэтчбек",
                 "а003аа102",
-                4,
-                true);
+                4);
+        System.out.println(bmw);
         Car kiaSportage = new Car(
                 "Kia",
                 "Sportage 4-го поколения",
                 2.4,
-                "red",
+                "красный",
                 2018,
-                "south Korea",
-                "автомат",
+                "Южная Корея",
+                "АКПП",
                 "кроссовер",
                 "а004аа102",
-                6,
-                true);
+                6);
+        System.out.println(kiaSportage);
         Car hyundai = new Car(
                 "Hyundai",
                 "Avante",
                 1.6,
-                "orange",
+                "оранжевый",
                 2016,
-                "south Korea",
-                "механика",
+                "Южная Корея",
+                "МКПП",
                 "седан",
                 "а005аа102",
-                5,
-                true);
-        System.out.println();
-        System.out.println(ladaGranta);
-        System.out.println(audiA8);
-        System.out.println(bmw);
-        System.out.println(kiaSportage);
+                5);
         System.out.println(hyundai);
-        System.out.println();
     }
 }
