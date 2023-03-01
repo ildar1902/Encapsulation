@@ -1,9 +1,8 @@
-import java.util.Arrays;
 
 public class Flower {
 
-    private  final String flowerName;
-    private  final String country;
+    private final String flowerName;
+    private final String country;
     private final double cost;
     private int lifeSpan;
 
@@ -29,30 +28,35 @@ public class Flower {
     public Flower(String flowerName, String country, double cost) {
         this(flowerName, country, cost, 3);
     }
+
     public String getFlowerName() {
         return flowerName;
     }
+
     public String getCountry() {
         return country;
     }
+
     public double getCost() {
         return cost;
     }
+
     public int getLifeSpan() {
         return lifeSpan;
     }
+
     public void setLifeSpan(int lifeSpan) {
         if (lifeSpan <= 0) {
-            this.lifeSpan = 3;}
-            else{
+            this.lifeSpan = 3;
+        } else {
             this.lifeSpan = lifeSpan;
         }
     }
 
     @Override
     public String toString() {
-        return "Название цветка: " + flowerName + ", страна происхождения: " + country +
-                ", стоимость = " + cost +
-                " рублей, срок стояния цветка: " + lifeSpan;
+        return "Название цветка: " + flowerName + String.format("%n") + "страна происхождения: " + country
+                + String.format("%n") + "стоимость = " + cost + " рублей " + String.format("%n")
+                + "срок стояния цветка: " + lifeSpan + " дн.";
     }
 }
