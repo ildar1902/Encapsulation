@@ -35,7 +35,7 @@ public class Cat {
         System.out.println("Мяу!");
         System.out.println("Меня зовут " + name);
         if (getAge() > 10) {
-            System.out.println("Мне уже " + getAge() + " лет...");
+            System.out.println("Мне уже " + getAge() + " лет");
         } else
             System.out.println("Мне ещё " + getAge() + " лет");
     }
